@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, p, ul, ol, li, span, b {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/1.5 "微软雅黑";
+	
+}
+ul, li {
+	list-style: none;
+}/*清除列表项外观*/
+a {
+	text-decoration: none;
+}/*设置超链接初始无下划线效果*/
+.fl {
+	float: left;
+}/*向左浮动*/
+.fr {
+	float: right;
+}/*向右浮动*/
+.clearfix {
+	zoom: 1;
+}
+.pr{position:relative;}
+/*相对定位*/
+.pa{position:absolute;}
+/*绝对定位*/
+
+.wfixed {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	background: rgba(127,127,171,0.4);
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}/*清除浮动*/
+.nav li {
+	float: left;
+	padding: 0 20px;
+	position: relative;
+	left: 450px;
+
+}/*浮动使得列表变为横向*/
+.nav li a{
+	font-size:25px;
+	color:rgba(250,245,245,1.00);
+	
+}
+.nav li a:hover{
+	background-color: rgba(127,127,171,1.0);
+}
+.topCen {
+	width:100%;
+	background: #F3F3F3;
+	padding-top:10px;
+}
+/*顶部*/
+.logo{
+	width: 1300px;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+}
+
+.banner{
+	width: 100%;
+	height: 600px;
+	margin:0 auto;
+	position: relative;
+}
+/*父元素*/
+
+.animatio{
+	position: absolute;
+	animation: myfirst 12s ease-in 3s infinite alternate;
+}
+@keyframes myfirst 
+{
+	0%   {background:  url( "../images/正唐文化公司网站设计用素材/陶瓷/青花/IMG_7095.JPG");}
+	25%  {background:  url( "../images/正唐文化公司网站设计用素材/公司图片/IMG_1213.JPG");}
+    50%  {background:  url( "../images/正唐文化公司网站设计用素材/公司图片/IMG_1672.JPG");}
+    100% {background:  url( "../images/正唐文化公司网站设计用素材/公司图片/IMG_1676.JPG");}
+}
+
+
+/*设置banner的动态轮播*/
+.imglist li img{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+}
+/*设置轮播图的宽度*/
+.pointer{
+	position: absolute;
+/*	z-index: 10;*/
+	top:550px;
+	left: 46%;
+}
+.pointer a{
+	width: 15px;
+	height:15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	background-color: rgba(255,255,255,0.40);
+	background-clip: content-box;
+	display: block;
+	margin:0px 5px;
+	float: left;
+}
+.pointer a:hover{
+	border:3px solid rgba(255,255,255,0.40);
+	background-color: #F5EAEA;
+}
+.photo{
+	z-index: 10;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.ceramic{
+	position: absolute;
+	margin: 0 auto;
+	
+}
+.background{
+
+	background: url("../images/背景.jpg") no-repeat;
+}
+.ceramic li{
+	float:left;
+	position: relative;
+	padding: 15px 100px;
+}
+.ceramic  li img{
+	width: 300px;
+	height: 300px;
+}
+.ceramic ul h3{
+	text-align: center;
+	font-size: 30px;
+	font-family: "华文琥珀";
+	color:#69D1A9;
+	margin: 20px 0 0 0;
+}
+
